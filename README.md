@@ -4,12 +4,13 @@ A deep learning project that detects whether a face image is **Real** or **Fake 
 ## Overview
 With the rise of AI-generated media, detecting deepfakes has become a critical task. This project trains a binary image classifier on the [140K Real and Fake Faces](https://www.kaggle.com/datasets/xhlulu/140k-real-and-fake-faces) dataset to distinguish real human faces from synthetically generated ones.
 
-## Project Structure
 DeepFake-Detection/
+│
 ├── deepfake-detection.ipynb   # Full training pipeline (EDA, training, evaluation)
 ├── predict.py                 # Inference script for single or multiple images
 ├── best_model.pth             # Saved best model weights
-└── image.png                  # Sample output / result visualization
+├── image.png                  # Sample output / result visualization
+└── README.md                  # Project documentation
 
 ## Model Architecture
 - **Base Model:** EfficientNet-B0 (pretrained on ImageNet, fine-tuned)
